@@ -6,10 +6,16 @@ public abstract class CatImpl implements Cat {
     private final String AWAKE_MESSAGE = "Cat should be awake now";
     private final String GO_TO_SLEEP_MESSAGE = "Cat should be snoozing";
     public final String CAT_SETTING = "cat";
-    public final int NONSENSE_AVERAGE_HEIGHT = -1; // who knows the height of "base cat" - so make nonsense?
+    // is this correct - should we initialise eat to a noise we may be unsure of ?
+    public final String CAT_EAT = "mewww";
+
+    // who knows the height of "base cat" - so make nonsense?
+    public final int NONSENSE_AVERAGE_HEIGHT = -1;
+
     private String asleepMessage = ASLEEP_MESSAGE;
     protected String catSetting = CAT_SETTING;
     protected int averageHeight = NONSENSE_AVERAGE_HEIGHT;
+    protected String eat = CAT_EAT;
 
     public String isAsleep(){
         return asleepMessage;
@@ -28,5 +34,8 @@ public abstract class CatImpl implements Cat {
         return averageHeight;
     }
 
+    public String eat(){
+        return eat;
+    }
 
 }
