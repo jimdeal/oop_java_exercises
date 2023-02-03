@@ -18,19 +18,19 @@ public class CatTest {
     }
 
     @Test
-    public void checkCatCanWakep() {
+    public void checkCatCanWakeup() {
         Cat domesticCat = new DomesticCat();
         domesticCat.goToSleep();
         domesticCat.wakeUp();
         assertEquals("Cat should be awake now", domesticCat.isAsleep());
     }
-/*
+
     @Test
     public void checkCatSetting() {
         Cat domesticCat = new DomesticCat();
         assertEquals("domestic", domesticCat.getSetting());
     }
-
+/*
     @Test
     public void checkCatHeight() {
         Cat domesticCat = new DomesticCat();
