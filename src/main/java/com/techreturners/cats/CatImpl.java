@@ -5,10 +5,11 @@ public abstract class CatImpl implements Cat {
     private final String ASLEEP_MESSAGE = "Cat should be awake by default";
     private final String AWAKE_MESSAGE = "Cat should be awake now";
     private final String GO_TO_SLEEP_MESSAGE = "Cat should be snoozing";
-    private String asleepMessage = ASLEEP_MESSAGE;
-
     public final String CAT_SETTING = "cat";
+    public final int NONSENSE_AVERAGE_HEIGHT = -1; // who knows the height of "base cat" - so make nonsense?
+    private String asleepMessage = ASLEEP_MESSAGE;
     protected String catSetting = CAT_SETTING;
+    protected int averageHeight = NONSENSE_AVERAGE_HEIGHT;
 
     public String isAsleep(){
         return asleepMessage;
@@ -24,7 +25,7 @@ public abstract class CatImpl implements Cat {
     }
 
     public int getAverageHeight(){
-        return 0;
+        return averageHeight;
     }
 
 
